@@ -9,19 +9,19 @@ number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: WG Working Group
+area: "Web and Internet Transport"
+workgroup: "Standard Communication with Network Elements"
 keyword:
  - next generation
  - unicorn
  - sparkling distributed ledger
 venue:
-  group: WG
-  type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+  group: "Standard Communication with Network Elements"
+  type: "Working Group"
+  mail: "scone@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/scone"
+  github: "RenjieTang/conformance-signal"
+  latest: "https://RenjieTang.github.io/conformance-signal/draft-rjt-scone-conformance-signal.html"
 
 author:
  -
