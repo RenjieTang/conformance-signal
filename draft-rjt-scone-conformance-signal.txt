@@ -70,8 +70,8 @@ Copyright Notice
 Table of Contents
 
    1.  Introduction
-   2.  Proposals
-   3.  Conventions and Definitions
+   2.  Conventions and Definitions
+   3.  Proposals
    4.  Security Considerations
    5.  IANA Considerations
    6.  Normative References
@@ -96,7 +96,15 @@ Table of Contents
    reducing the costs of traffic shapers and CAPs by reducing the
    workload of congestion controllers.
 
-2.  Proposals
+2.  Conventions and Definitions
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+3.  Proposals
 
    The following proposals assume the throughput advice is transmitted
    from CSPs to CAPs in the format of a QUIC packet.
@@ -122,14 +130,6 @@ Table of Contents
        QUIC server.  Upon receiving the SCONE packet, the CSP SHOULD
        drop it and disable traffic shapers.  The QUIC client MAY refuse
        the throughput advice by not sending the SCONE packet back.
-
-3.  Conventions and Definitions
-
-   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
-   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
-   "OPTIONAL" in this document are to be interpreted as described in
-   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
-   capitals, as shown here.
 
 4.  Security Considerations
 
