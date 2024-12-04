@@ -48,6 +48,7 @@ The primary objective of SCONE is to facilitate communication between CSPs and C
 
 In addition to determining the format and delivery method for throughput advice, the working group should also establish the conditions under which CSPs SHOULD deactivate their traffic shapers and transition into trust-and-verify mode. This helps CSPs by reducing the costs of traffic shapers and CAPs by reducing the workload of congestion controllers.
 
+
 # Proposals
 
 The following proposals assume the throughput advice is transmitted from CSPs to CAPs in the format of a QUIC packet.
