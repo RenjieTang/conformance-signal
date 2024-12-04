@@ -35,8 +35,6 @@ informative:
 
 --- abstract
 
-# Abstract
-
 This document proposes conformance signals to be sent by CAPs when they are able to adapt to bitrate indicated by the SCONE signal so that CSPs stop policing.
 
 
