@@ -47,17 +47,17 @@ The primary objective of SCONE is to facilitate communication between CSPs and C
 In addition to determining the format and delivery method for throughput advice, the working group should also establish the conditions under which CSPs SHOULD deactivate their traffic shapers and transition into trust-and-verify mode. This helps CSPs by reducing the costs of traffic shapers and CAPs by reducing the workload of congestion controllers.
 
 
+# Conventions and Definitions
+
+{::boilerplate bcp14-tagged}
+
+
 # Proposals
 
 The following proposals assume the throughput advice is transmitted from CSPs to CAPs in the format of a QUIC packet.
 
 1. The CSP default marks the 4-tuple flow as conformant when its SCONE packet is received by the QUIC client. The CSP SHOULD not disable traffic shapers until it confirms the QUIC client has acked the SCONE signal. Because the CSP lacks visibility into packets containing ACK frames, it MAY only deduce the QUIC client's receipt of the signal by observing the cessation of SCONE packet retransmissions by the QUIC server. If the CSP gives an unrealistically low throughput advice and the QUIC client decides to not follow, the client SHOULD not ack the SCONE packet. The SCONE protocol SHOULD also specify a limit on the number of SCONE packet retransmissions. On retransmission timeout, the QUIC server MUST not retransmit more SCONE packets, and the CSP SHOULD consider the current flow ineligible for SCONE.
 2. The QUIC client signals conformance by echoing back the SCONE packet. Upon accepting the throughput advice, the QUIC client MAY send back the SCONE packet along with its ack packet to the QUIC server. Upon receiving the SCONE packet, the CSP SHOULD drop it and disable traffic shapers. The QUIC client MAY refuse the throughput advice by not sending the SCONE packet back.
-
-
-# Conventions and Definitions
-
-{::boilerplate bcp14-tagged}
 
 
 # Security Considerations
