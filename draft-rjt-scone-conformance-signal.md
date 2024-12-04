@@ -52,7 +52,7 @@ In addition to determining the format and delivery method for throughput advice,
 
 The following proposals assume the throughput advice is transmitted from CSPs to CAPs in the format of a QUIC packet.
 
-## The CSP default marks the 4-tuple flow as conformant when its SCONE packet is received by the QUIC client.
+### The CSP default marks the 4-tuple flow as conformant when its SCONE packet is received by the QUIC client.
 
 
 # Conventions and Definitions
